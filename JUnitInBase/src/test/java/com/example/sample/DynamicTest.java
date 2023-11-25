@@ -1,6 +1,6 @@
 package com.example.sample;
 
-import org.junit.jupiter.api.DynamicTest;
+
 import org.junit.jupiter.api.TestFactory;
 import org.junit.jupiter.api.function.ThrowingConsumer;
 import java.util.Arrays;
@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.DynamicTest.dynamicTest;
  *
  * Game Changer is - definition; dynamicTest(String displayName, Executable)
  */
-public class DynamicCasesTest {
+public class DynamicTest {
 
     @TestFactory
     Collection<org.junit.jupiter.api.DynamicTest> dynamicTestsFromCollection() {
