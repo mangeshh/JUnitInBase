@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalculatorTest {
+public class CalculatorParameterizedTest {
 
 
     @ParameterizedTest
@@ -17,18 +17,4 @@ public class CalculatorTest {
         assertEquals(expectedSum, actualSum, () -> num1 + " + " + num2 + " should equal " + expectedSum);
     }
 
-    @Test
-    void testLambdaExpression() {
-        int result = performOperation(5, x -> x * 2);
-        assertEquals(10, result);
-    }
-
-    private int performOperation(int number, IntOperation operation) {
-        return operation.apply(number);
-    }
-
-    @FunctionalInterface
-    interface IntOperation {
-        int apply(int number);
-    }
 }
