@@ -15,10 +15,10 @@ import static org.junit.jupiter.api.DynamicTest.dynamicTest;
  *
  * Game Changer is - definition; dynamicTest(String displayName, Executable)
  */
-public class DynamicTestExample {
+public class DynamicTest {
 
     @TestFactory
-    Collection<DynamicTest> dynamicTestsFromCollection() {
+    Collection<org.junit.jupiter.api.DynamicTest> dynamicTestsFromCollection() {
         return Arrays.asList(
                 dynamicTest("Addition Test", () -> assertEquals(4, 2 + 2)),
                 dynamicTest("Subtraction Test", () -> assertEquals(2, 4 - 2)),
@@ -28,18 +28,18 @@ public class DynamicTestExample {
     }
 
     @TestFactory
-    Stream<DynamicTest> dynamicTestsFromStream() {
+    Stream<org.junit.jupiter.api.DynamicTest> dynamicTestsFromStream() {
         return Stream.of("apple1", "banana", "cherry")
                 .map(s -> dynamicTest("Length of " + s, () -> assertEquals(s.length(), 6)));
     }
 
     @TestFactory
-    Stream<DynamicTest> dynamicTestsUsingMethodReference() {
+    Stream<org.junit.jupiter.api.DynamicTest> dynamicTestsUsingMethodReference() {
         return Stream.of(1, 2, 3)
                 .map(this::createDynamicTestForNumber);
     }
 
-    private DynamicTest createDynamicTestForNumber(int number) {
+    private org.junit.jupiter.api.DynamicTest createDynamicTestForNumber(int number) {
         ThrowingConsumer<Integer> test = n -> assertEquals(number * number, n * n);
         String testName = "Square of " + number;
         return dynamicTest(testName, () -> test.accept(number));

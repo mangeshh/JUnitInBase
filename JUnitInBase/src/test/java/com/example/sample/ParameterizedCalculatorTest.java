@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * learn parameterized tests.
  */
-public class CalculatorParameterizedTest {
+public class ParameterizedCalculatorTest {
 
 
     @ParameterizedTest
