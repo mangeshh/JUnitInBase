@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.DynamicTest.dynamicTest;
  *
  * Game Changer is - definition; dynamicTest(String displayName, Executable)
  */
-public class DynamicTest {
+public class DynamicCasesTest {
 
     @TestFactory
     Collection<org.junit.jupiter.api.DynamicTest> dynamicTestsFromCollection() {
