@@ -1,4 +1,4 @@
-package com.example.sample;
+package com.junit.sample;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;

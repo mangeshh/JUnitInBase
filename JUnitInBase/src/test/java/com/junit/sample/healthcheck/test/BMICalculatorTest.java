@@ -1,7 +1,7 @@
-package com.example.sample.healthcheck.test;
+package com.junit.sample.healthcheck.test;
 
 
-import com.example.sample.healthcheck.BMICalculator;
+import com.junit.sample.healthcheck.BMICalculator;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;

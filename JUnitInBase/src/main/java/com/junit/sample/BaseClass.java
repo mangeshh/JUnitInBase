@@ -1,4 +1,4 @@
-package com.example.sample;
+package com.junit.sample;
 
 public class BaseClass {
 }
