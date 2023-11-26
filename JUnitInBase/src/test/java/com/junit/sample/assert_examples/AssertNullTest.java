@@ -1,4 +1,4 @@
-package com.junit.sample;
+package com.junit.sample.assert_examples;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.junit.sample;
+package com.junit.sample.nested_tests;
 
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

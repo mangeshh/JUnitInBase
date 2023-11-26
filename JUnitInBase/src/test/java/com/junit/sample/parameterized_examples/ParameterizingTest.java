@@ -1,5 +1,6 @@
-package com.junit.sample;
+package com.junit.sample.parameterized_examples;
 
+import com.junit.sample.Calculator;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;

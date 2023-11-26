@@ -1,4 +1,4 @@
-package com.junit.sample;
+package com.junit.sample.before_after_class_test_examples;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

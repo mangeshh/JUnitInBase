@@ -1,4 +1,4 @@
-package com.junit.sample;
+package com.junit.sample.dynamic_examples;
 
 
 import org.junit.jupiter.api.TestFactory;

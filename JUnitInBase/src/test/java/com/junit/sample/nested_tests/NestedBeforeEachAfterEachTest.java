@@ -1,4 +1,4 @@
-package com.junit.sample;
+package com.junit.sample.nested_tests;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
