@@ -6,7 +6,7 @@ import static org.mockito.Mockito.*;
 import java.util.List;
 import java.util.Map;
 
-public class BasicMockito {
+public class BeginnerMockito {
 
     @Test
     public void testMockingList() {
