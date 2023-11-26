@@ -24,7 +24,7 @@ public class UserManagerTest {
                 // You can add more logic here, like assertions or additional method calls
                 return null;
             }
-        }).when(mockUserManager).updateUser(any(User.class));
+        }).when(mockUserManager).updateUser(any(User.class)); // Imp, see the usage of any in case of custom object,  User
 
         // Call the method
         User user = new User();
