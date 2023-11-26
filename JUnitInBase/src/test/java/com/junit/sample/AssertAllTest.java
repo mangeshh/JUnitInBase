@@ -10,7 +10,7 @@ public class AssertAllTest {
         String firstName = "John";
         String lastName = "Doe";
         int age = 30;
-
+        // assertAll has heading and all executables.
         assertAll("Person Details",
                 () -> assertEquals("John", firstName, "First name mismatch"),
                 () -> assertEquals("Doe", lastName, "Last name mismatch"),
