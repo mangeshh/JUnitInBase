@@ -16,6 +16,7 @@ public class UserManagerTest {
         UserManager mockUserManager = mock(UserManager.class);
 
         // Use doAnswer to add behavior to the updateUser method -- like interceptor.
+        // when u call updateUser on mockUserManager, execute the answer method! Simple.
         doAnswer(new Answer<Void>() {
             public Void answer(InvocationOnMock invocation) {
                 Object[] args = invocation.getArguments();
