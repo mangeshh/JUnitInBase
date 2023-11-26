@@ -18,8 +18,13 @@ public class ServiceTest {
                 .thenReturn("Second call response")
                 .thenReturn("Third call response");
 
+        String response = mockService.getResponse("test");
+        assertEquals("First call response", response);
+
+        verify(mockService).getResponse("test");
+
         // Asserting the behavior for consecutive calls
-        assertEquals("First call response", mockService.getResponse("test"));
+        /// assertEquals("First call response", mockService.getResponse("test"));
         assertEquals("Second call response", mockService.getResponse("test"));
         assertEquals("Third call response", mockService.getResponse("test"));
 
