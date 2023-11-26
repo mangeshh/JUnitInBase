@@ -1,4 +1,4 @@
-package com.junit.sample.healthcheck.test;
+package com.junit.sample.app.healthcheck.test;
 
 
 import com.junit.sample.healthcheck.BMICalculator;
