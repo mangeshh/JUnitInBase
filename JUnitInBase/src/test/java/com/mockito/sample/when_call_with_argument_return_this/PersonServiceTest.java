@@ -2,6 +2,7 @@ package com.mockito.sample.when_call_with_argument_return_this;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.Mockito.*;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatcher;
 
@@ -16,7 +17,7 @@ public class PersonServiceTest {
         ArgumentMatcher<Person> personMatcher = new ArgumentMatcher<Person>() {
             @Override
             public boolean matches(Person person) {
-                return person.getName().equals("John") && person.getAge() >=18 ;
+                return person.getName().equals("John") && person.getAge() >= 18;
             }
         };
 
@@ -32,7 +33,5 @@ public class PersonServiceTest {
         // Verify the method was called with the correct arguments
         verify(personServiceMock).addPerson(argThat(personMatcher));
 
-        // Assertions (optional)
-        //assertTrue(result);
     }
 }
