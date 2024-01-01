@@ -31,14 +31,54 @@ public class GreeterSteps {
 	private String actual;
 
 	@When("greeting is done")
-	@When("uma saudação é feita")
 	public void greeting_is_done() {
 		actual = g.sayHello();
 	}
 
 	@Then("greeting should be {string}")
-	@Then("a saudação deve ser {string}")
 	public void greeting_should_be(String expected) {
 		assertEquals(expected, actual);
 	}
 }
+
+
+/**
+const axios = require('axios');
+
+		const options = {
+		method: 'GET',
+		url: 'https://indeed-indeed.p.rapidapi.com/apisearch',
+		params: {
+		publisher: '<REQUIRED>',
+		v: '2',
+		format: 'json',
+		callback: '<REQUIRED>',
+		q: 'java',
+		l: 'austin, tx',
+		sort: '<REQUIRED>',
+		radius: '25',
+		st: '<REQUIRED>',
+		jt: '<REQUIRED>',
+		start: '<REQUIRED>',
+		limit: '<REQUIRED>',
+		fromage: '<REQUIRED>',
+		highlight: '<REQUIRED>',
+		filter: '<REQUIRED>',
+		latlong: '<REQUIRED>',
+		co: '<REQUIRED>',
+		chnl: '<REQUIRED>',
+		userip: '<REQUIRED>',
+		useragent: '<REQUIRED>'
+		},
+		headers: {
+		'X-RapidAPI-Key': '431d7796camsh5cff45ce81afc5cp149aa9jsnc5ca706f85ef',
+		'X-RapidAPI-Host': 'indeed-indeed.p.rapidapi.com'
+		}
+		};
+
+		try {
+		const response = await axios.request(options);
+		console.log(response.data);
+		} catch (error) {
+		console.error(error);
+		} */
